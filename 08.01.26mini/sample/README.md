@@ -1,16 +1,91 @@
-# React + Vite
+# React Forms Collection
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application built with Vite featuring multiple form components including Login, Todo List, Contact Form, and Subscription Form.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Login Form** - User authentication form
+- **Todo List** - Task management component
+- **Contact Form** - Contact information submission form
+- **Subscription Form** - Newsletter subscription form
 
-## React Compiler
+## 📦 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19.2.0
+- Vite 7.2.4
+- Modern ES6+ JavaScript
 
-## Expanding the ESLint configuration
+## 🛠️ Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+## 🏃 Development
+
+```bash
+npm run dev
+```
+
+## 🏗️ Build
+
+```bash
+npm run build
+```
+
+## 🌐 Deployment
+
+### Vercel Deployment
+
+This project is configured for easy deployment on Vercel:
+
+1. **Automatic Deployment via GitHub:**
+   - Connect your GitHub repository to Vercel
+   - Vercel will automatically detect the Vite configuration
+   - The project will be deployed automatically on every push to main
+
+2. **Manual Deployment:**
+   ```bash
+   npm install -g vercel
+   vercel
+   ```
+
+3. **Vercel Configuration:**
+   - Root Directory: `08.01.26mini/sample`
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+   - Install Command: `npm install`
+
+### GitHub Repository
+
+Repository: [https://github.com/selvarajane/08.01.26mini.git](https://github.com/selvarajane/08.01.26mini.git)
+
+## 📝 Project Structure
+
+```
+sample/
+├── src/
+│   ├── components/
+│   │   ├── LoginForm.jsx
+│   │   ├── TodoList.jsx
+│   │   ├── ContactForm.jsx
+│   │   ├── SubscriptionForm.jsx
+│   │   └── FormStyles.css
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   └── index.css
+├── public/
+├── index.html
+├── package.json
+├── vite.config.js
+└── vercel.json
+```
+
+## 🎯 Usage
+
+After starting the development server, navigate to `http://localhost:5173` to see the application.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
