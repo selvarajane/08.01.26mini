@@ -1,7 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "devCommand": "npm run dev",
+  "outputDirectory": "08.01.26mini/sample/dist",
   "installCommand": "npm install",
   "framework": "vite",
   "rewrites": [

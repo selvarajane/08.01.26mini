@@ -23,7 +23,9 @@ Repository: [https://github.com/selvarajane/08.01.26mini.git](https://github.com
 
 ### Vercel Deployment
 
-To deploy on Vercel:
+To deploy on Vercel, you have **TWO OPTIONS**:
+
+#### Option 1: Using Root Directory Setting (Recommended)
 
 1. **Import Project:**
    - Go to [Vercel Dashboard](https://vercel.com)
@@ -31,20 +33,26 @@ To deploy on Vercel:
    - Import from GitHub repository: `selvarajane/08.01.26mini`
 
 2. **Configure Settings:**
-   - **Root Directory:** `08.01.26mini/sample`
-   - **Framework Preset:** Vite
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-   - **Install Command:** `npm install`
+   - **Root Directory:** Click "Edit" and set to `08.01.26mini/sample`
+   - **Framework Preset:** Vite (auto-detected)
+   - **Build Command:** `npm run build` (auto-detected)
+   - **Output Directory:** `dist` (auto-detected)
+   - **Install Command:** `npm install` (auto-detected)
 
 3. **Deploy:**
    - Click "Deploy"
    - Vercel will automatically build and deploy your application
    - You'll get a live URL (e.g., `https://08-01-26mini.vercel.app`)
 
-4. **Automatic Deployments:**
-   - Every push to the `main` branch will trigger a new deployment
-   - Pull requests will create preview deployments
+#### Option 2: Using Root Package.json (Alternative)
+
+If Option 1 doesn't work, the root `package.json` and `vercel.json` are configured to handle the nested structure automatically. Just import the project and deploy - no root directory change needed.
+
+#### After Deployment:
+
+- **Automatic Deployments:** Every push to the `main` branch will trigger a new deployment
+- **Preview Deployments:** Pull requests will create preview deployments
+- **Troubleshooting:** If you see a blank page, check the Vercel build logs and ensure the Root Directory is set correctly
 
 ## 📝 More Information
 

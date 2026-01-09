@@ -1,0 +1,14 @@
+{
+  "name": "08-01-26mini",
+  "version": "1.0.0",
+  "description": "React Forms Collection - Main project",
+  "scripts": {
+    "build": "cd 08.01.26mini/sample && npm install && npm run build",
+    "dev": "cd 08.01.26mini/sample && npm run dev",
+    "install": "cd 08.01.26mini/sample && npm install"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
